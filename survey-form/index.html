@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Hobi Pribadi</h1>
+      <p id="description">
+        Halo! Terima kasih telah berpartisipasi dalam survei ini yang bertujuan
+        untuk lebih memahami dan merinci hobi pribadi Anda. Tujuan dari survei
+        ini adalah untuk mendapatkan wawasan yang lebih dalam tentang
+        preferensi, pengalaman, dan dampak positif yang mungkin Anda alami
+        melalui kegiatan hobi Anda. Jawaban Anda akan membantu kami merancang
+        lebih baik pengalaman berhobi untuk orang lain. Silakan berikan
+        tanggapan sejujurnya dan berikan insight yang berharga!
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <div id="data-diri" class="form-section">
+          <label id="name-label" for="name">Nama</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Masukkan nama anda..."
+            required
+          />
+
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan Email anda..."
+            required
+          />
+
+          <label id="number-label" for="number">Umur</label>
+          <input
+            type="number"
+            id="number"
+            min="0"
+            max="100"
+            placeholder="Masukkan umur anda..."
+            required
+          />
+
+          <label for="dropdown">Role Anda</label>
+          <select name="peran" id="dropdown">
+            <option value="" disabled>Pilihlah peran anda</option>
+            <option value="siswa">Siswa</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="full-time">Pekerja Penuh Waktu</option>
+            <option value="part-time">Pekerja Paruh Waktu</option>
+            <option value="other">Lainnya</option>
+          </select>
+
+          <label for="jenis-kelamin">Jenis Kelamin</label>
+          <div class="gender-options">
+            <label for="laki-laki">
+              <input type="radio" value="Laki-laki" name="jk" id="laki-laki" />
+              Laki-laki
+            </label>
+            <label for="perempuan">
+              <input type="radio" value="Perempuan" name="jk" id="perempuan" />
+              Perempuan
+            </label>
+          </div>
+        </div>
+
+        <div id="data-hobi" class="form-section">
+          <label for="hobi">Hobi Anda</label>
+          <div>
+            <label for="olahraga">
+              <input type="checkbox" id="olahraga" value="olahraga" />
+              Olahraga
+            </label>
+          </div>
+          <div>
+            <label for="membaca">
+              <input type="checkbox" id="membaca" value="membaca" />
+              Membaca
+            </label>
+          </div>
+          <div>
+            <label for="menonton-film">
+              <input type="checkbox" id="menonton-film" value="menonton-film" />
+              Menonton Film
+            </label>
+          </div>
+          <div>
+            <label for="bermain-musik">
+              <input type="checkbox" id="bermain-musik" value="bermain-musik" />
+              Bermain Musik
+            </label>
+          </div>
+          <div>
+            <label for="fotografi">
+              <input type="checkbox" id="fotografi" value="fotografi" />
+              Fotografi
+            </label>
+          </div>
+          <div>
+            <label for="programming">
+              <input type="checkbox" id="programming" value="programming" />
+              Programming
+            </label>
+          </div>
+          <div>
+            <label for="memancing">
+              <input type="checkbox" id="memancing" value="memancing" />
+              Memancing
+            </label>
+          </div>
+          <div>
+            <label for="memasak">
+              <input type="checkbox" id="memasak" value="memasak" />
+              Memasak
+            </label>
+          </div>
+          <div>
+            <label for="melukis">
+              <input type="checkbox" id="melukis" value="melukis" />
+              Melukis
+            </label>
+          </div>
+          <div>
+            <label for="lainnya">
+              <input type="checkbox" id="lainnya" value="lainnya" />
+              Lainnya
+            </label>
+          </div>
+
+          <label id="experience" for="pengalaman"
+            >Ceritakan pengalaman terbaik Anda dalam menjalani hobi</label
+          >
+          <textarea
+            name="pengalaman"
+            id="pengalaman"
+            placeholder="Ceritakan pengalamanmu tentang hobi anda"
+          ></textarea>
+
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
